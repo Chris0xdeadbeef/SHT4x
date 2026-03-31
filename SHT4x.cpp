@@ -339,8 +339,9 @@ bool SHT4x::isHeatCmd(measType measurementType)
     case SHT4x_MEASUREMENT_SHORT_MEDIUM_HEAT:
     case SHT4x_MEASUREMENT_SHORT_LOW_HEAT:
       return true;
+    default:
+      return false;
   }
-  return false;
 }
 
 
